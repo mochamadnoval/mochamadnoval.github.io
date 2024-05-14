@@ -1,2 +1,2 @@
-# mochamadnoval.github.io.git
+# mochamadnoval.github.io
 Portofolio Website Noval
