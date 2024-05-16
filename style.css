@@ -8,3 +8,19 @@
 section {
   padding-top: 5rem;
 }
+.text-justify {
+  text-align: justify;
+}
+h2 {
+  margin-bottom: 2rem;
+}
+.content {
+  padding-top: 2rem;
+}
+.card-img-top {
+  transition: transform 0.3s ease; /* Menambahkan transisi halus */
+}
+
+.card-img-top:hover {
+  transform: scale(0.95); /* Mengecilkan gambar sedikit */
+}
