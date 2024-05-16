@@ -43,7 +43,12 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/noval.jpeg" alt="Mochamad Noval" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/noval.jpeg" alt="Mochamad Noval" width="200" class="rounded-circle img-thumbnail" id="myImage" onclick="openModal()" />
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01" />
+      </div>
+
       <h1 class="display-4 fw-bold">Mochamad Noval Lazuardi</h1>
       <br />
       <p class="lead">Operator Produksi | Junior IT</p>
@@ -215,15 +220,17 @@
     <!-- Akhir footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <!-- <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxmItbX7oR24DjzQyzKrqwp0zg3A_Rk3gxrm7nIX71u-XJ17oXXbbEJs6bZfsy4g9BN0w/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script> -->
+    <!-- js untuk foto profile  -->
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("img01").src = document.getElementById("myImage").src;
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+    </script>
+    <!-- akhir js untuk foto profile  -->
   </body>
 </html>
